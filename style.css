@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    /* background: #2f363e; */
+}
+.box{
+    position: relative;
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    /* background-color: #2f363e; */
+    background-color: #fff;
+    padding: 30px 50px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+}
+h2{
+    width: 100%;
+    font-weight: 600;
+    text-align: left;
+    color: #002765;
+    font-size: 1.75rem;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+.inputbx{
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    background-color: #edeef0;
+    /* box-shadow: 5px 5px 7px rgba(0,0,0,0.25), inset 2px 2px 5px rgba(0,0,0,0.5),
+    inset -3px -3px 5px rgba(0,0,0,0.5); */
+
+}
+
+.box li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #1f83f2;
+    margin: 15px 0px;
+    padding: 7px 10px 7px 45px;
+    min-height: 45px;
+    width: calc(100% - 40px);
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+    /* box-shadow: 5px 5px 7px rgba(0,0,0,0.25), inset 2px 2px 5px rgba(0,0,0,0.5),
+    inset -3px -3px 5px rgba(0,0,0,0.5); */
+
+}
+.box li i{
+    position: absolute;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f31a3e;
+    border-radius: 50%;
+    /* box-shadow: 5px 5px 7px rgba(0,0,0,0.25), inset 2px 2px 5px rgba(255,255,255,0.25),
+    inset -3px -3px 5px rgba(0,0,0,0.5); */
+}
+.box li i::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+.box li i::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+.box li::before{
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.box li.done{
+    background-color: #0BDA51;
+}
+.box li.done::after{
+    content: '';
+    position: absolute;
+    left: 14px;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid #0BDA51;
+    border-bottom: 2px solid #0BDA51;
+    /* background-color: #fff; */
+    transform: rotate(315deg);
+}
+.listitem{
+    position: relative;
+    margin-top: 10px;
+    height: 300px;
+    overflow-y: auto;
+    cursor: pointer;
+    padding-right: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #edeef0;
+
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(168, 152, 152);
+
+}
